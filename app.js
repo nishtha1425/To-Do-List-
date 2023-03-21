@@ -18,7 +18,7 @@ app.get("/", function(req, res){
     
     let day = date();
 
-        res.render("list", {
+        res.render("list.ejs", {
             listTitle: day,
             newListItem: items
         });
@@ -28,7 +28,7 @@ app.get("/", function(req, res){
 
 app.get("/work", function(req, res){
 
-    res.render("list", {
+    res.render("list.ejs", {
         listTitle: "Work List",
         newListItem: workItems
     });
